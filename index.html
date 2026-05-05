@@ -16,7 +16,12 @@
 			background: #000;
 		}
 	</style>
-
+    <script>
+    document.addEventListener('click', function() {
+		const bgm = document.getElementById('bgm');
+		bgm.play().catch(err => {});
+	}, { once: true });
+	</script>
 </head>
 
 <body>
